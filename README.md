@@ -1,148 +1,119 @@
-🛒 Men’s Wear E-commerce Website
-📌 Overview
-An online shopping platform dedicated to men’s clothing, designed to offer a seamless and secure experience for browsing, selecting, and purchasing items from the comfort of home.
+# 🛒 Men’s Wear E-commerce Website
 
-🎯 Objectives
-Streamline the process of buying men’s apparel online.
+## 📌 Project Overview
+An online shopping platform specializing in men’s clothing. The goal is to provide a seamless user experience for browsing, selecting, and purchasing men’s wear from the comfort of home.
 
-Enable sellers/admins to manage products and orders efficiently.
+---
 
-Deliver a smooth user experience with intuitive navigation and secure checkout.
+## 🎯 Objectives
+- Facilitate the process of buying men’s clothing online.
+- Enable sellers to easily add and manage products.
+- Deliver an intuitive user experience with secure checkout and order management.
 
-📚 Scope
-User Features:
+---
 
-Account registration and login
+## 📚 Scope
+- **User Accounts:** Registration, login, profile management, cart, and order tracking.
+- **E-commerce Features:** Product catalog, detailed product pages, cart management, secure checkout.
+- **Admin Dashboard:** Product, category, and order management for sellers/admins.
 
-Profile management
+---
 
-Shopping cart and order tracking
+## 👥 Stakeholders
+- **Project Manager:** Oversees tasks and project timeline.
+- **Developers:** Frontend, backend, database integration.
+- **UI/UX Designer:** Designs smooth user experience.
+- **Website Admin:** Manages users, products, and orders.
+- **Customers:** End-users who browse and purchase.
 
-E-commerce Functionality:
+---
 
-Product listings and detail pages
+## 🗂️ Timeline & Milestones
+**Phase 1 – Planning:**  
+- Requirement gathering  
+- System architecture design  
+- Database schema development  
+- Kickoff development
 
-Advanced search and filter options
+**Phase 2 – Implementation & Testing:**  
+- Core features (accounts, products, orders)  
+- User acceptance testing (UAT) & bug fixes
 
-Cart management and secure checkout
+**Phase 3 – Launch & Post-Launch:**  
+- Soft launch for initial users  
+- Improvements based on feedback  
+- Full launch and marketing  
+- Ongoing maintenance & support
 
-Admin Dashboard:
+---
 
-Product and category management
+## ⚙️ Functional Requirements
+- Detailed product pages with fabric, size, and description.
+- Product listing and search.
+- Size selection.
+- Cart management with secure checkout.
 
-Order and user oversight
+**Priorities:**  
+- Business value (checkout, product display)  
+- User experience (navigation, cart, accounts)  
+- Technical feasibility  
+- Strong security (authentication, encryption)
 
-👥 Stakeholders
-Project Manager: Oversees development lifecycle and milestones
+---
 
-Developers: Responsible for frontend, backend, and database integration
+## 🛠️ Technical Requirements
 
-UI/UX Designer: Crafts user-friendly interface and design
+**🔗 Architecture:**  
+- **Stack:** MERN (MongoDB, Express, React, Node.js)
+- **Frontend:** React, Redux, React Router DOM, Axios, Formik
+- **Backend:** Node.js, Express
+- **API:** RESTful endpoints (GET, POST, PUT, DELETE) using JSON
+- **Auth:** JWT for secure user auth
 
-Website Admin: Manages content, users, and transactions
+**⚡ Ports:**  
+- Frontend: 5173  
+- Backend: 3000
 
-Customers: End-users who browse and make purchases
+---
 
-🗂️ Timeline & Milestones
-Phase 1 – Planning
-Requirements gathering
+## 🗄️ Database Schema
 
-System architecture design
+**MongoDB Collections:**  
+- **Users:** UserId, Username, Email, Password (hashed), Role, CreatedAt
+- **Carts:** UserId, Products, Total Amount, Quantity
+- **Products:** Product details (ID, name, size, price, stock)
+- **Orders:** OrderID, UserID, Products, Amount, Address, Phone
 
-Database schema design
+**Relations:**  
+- User ↔ Cart (One-to-One)  
+- User ↔ Orders (One-to-Many)  
+- Product ↔ Cart/Orders (One-to-Many)
 
-Development kickoff
+---
 
-Phase 2 – Implementation & Testing
-Core feature development (accounts, products, orders)
+## 📑 API Documentation
+- JSON data format for all requests and responses.
+- RESTful endpoints secured with JWT.
+- Full API routes documented with Postman collections.
 
-User acceptance testing (UAT)
+---
 
-Bug fixing and refinements
+## ✅ Status
+🚀 **In Development** — Implementation and testing in progress!
 
-Phase 3 – Launch & Post-Launch
-Soft launch for early users
+---
 
-Iterative improvements based on feedback
+## 🏷️ Tech Stack
+**Frontend:** React, Redux, React Router, Axios  
+**Backend:** Node.js, Express  
+**Database:** MongoDB (Cloud)  
+**Auth:** JWT  
+**API:** REST
 
-Full launch and marketing campaign
+---
 
-Ongoing maintenance and feature updates
+## 📬 Contact
+For any questions or contributions, please open an issue or submit a pull request.
 
-⚙️ Functional Requirements
-Comprehensive product detail pages (fabric, size, description)
-
-Product listing and search capabilities
-
-Cart and size selection functionality
-
-Secure and user-friendly checkout process
-
-Key Priorities:
-
-High business value features (product display, checkout)
-
-Exceptional user experience (intuitive UI, smooth navigation)
-
-Feasibility and scalability
-
-Robust security (authentication, data protection)
-
-🛠️ Technical Requirements
-🔧 Architecture
-Stack: MERN (MongoDB, Express, React, Node.js)
-
-Frontend: React, Redux, React Router DOM, Axios, Formik
-
-Backend: Node.js, Express
-
-API: RESTful (JSON format using GET, POST, PUT, DELETE)
-
-Authentication: JWT-based secure login
-
-🌐 Ports
-Frontend: 5173
-
-Backend: 3000
-
-🗄️ Database Schema
-MongoDB Collections
-Users: userId, username, email, password (hashed), role, createdAt
-
-Carts: userId, products, totalAmount, quantity
-
-Products: productId, name, size, price, stock, category
-
-Orders: orderId, userId, products, amount, address, phone
-
-Entity Relationships
-User ↔ Cart — One-to-One
-
-User ↔ Orders — One-to-Many
-
-Product ↔ Cart / Orders — One-to-Many
-
-📑 API Documentation
-All endpoints follow REST principles and use JSON format.
-
-Secured with JWT for authentication and authorization.
-
-Complete API documentation available via Postman collection.
-
-✅ Project Status
-🚀 In Development — Core features are being implemented and tested.
-
-🏷️ Tech Stack
-Frontend: React, Redux, React Router DOM, Axios
-
-Backend: Node.js, Express
-
-Database: MongoDB (Cloud)
-
-Authentication: JWT
-
-API: RESTful services
-
-📬 Contact & Contributions
-For questions, feedback, or contributions, please open an issue or submit a pull request.
+---
 
